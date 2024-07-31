@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyOldThings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="main">
+            <div class="under-main">
+                <a class="tags active" href="index.html">My Things</a>
+                <a class="tags" href="contacts.html">Contacts</a>
+
+            </div>
+        </div>
+    </header>
+    <hr class="line">
+
+    <section>
+        <div class="card1">
+            <img class="img" src="laptop.jpg" alt="...">
+
+            <div class="info">
+                <p class="about">
+                    Ноутбук Sony Windows 10 pro <br>
+                </p>
+                <p>
+                    2500 Гривень
+                </p>
+                <p>
+                    Коломия
+                    13.07.24
+                </p>
+            </div>
+
+            
+
+        </div>
+
+
+        <div class="card card3">
+            <img class="img1" src="watch.jpg" alt="...">
+
+            <div class="info">
+                <p class="about">
+                    Watch 3 <br>
+                </p>
+                <p>
+                    2000 Гривень
+                </p>
+                <p>
+                    Коломия
+                    13.07.24
+                </p>
+            </div>
+
+           
+            </div>
+
+            <button  id="myBtn">Купити</button>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>BUYING</p>
+
+
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="3ec305aa-81a4-4d68-99f8-75cb420c6d9b">
+
+
+                        <p ><input class="information" name="name" type="text" required placeholder="Your Name" ></p>
+                        <p ><input class="information" name="surname" type="text" required placeholder="Your Surname" ></p>
+                        <p ><input class="information" name="city" type="text" required placeholder="Your City"  ></p>
+                        <p ><input class="information" name="POST" type="text" required placeholder="Your Post (Нова Пошта)"  ></p>
+                        
+                        <p> <input class="information" name="text"  type="text" placeholder="Your Message"></p>
+                        
+                        
+                        <div class="chose">
+                            <fieldset>
+                                <legend><b>Chose Your Goods</b></legend>
+                                  <input type="checkbox" id="laptop" value="laptop" name="chose"   />
+                                  <label for="chose">Laptop</label>
+                            
+                                  <input type="checkbox" id="watch" value="watch"  name="chose"  />
+                                  <label for="chose">Watch</label>
+                              </fieldset>
+                        </div>
+                          
+                        
+
+                        <button id="myBtn" class="go" type="submit">Купити</button>
+                        
+                    </form>
+
+
+                    </p>
+                </div>
+            </div>
+        
+        
+
+    </section>
+
+
+
+    <script src="JavaSc.js"></script>
+</body>
+</html>
